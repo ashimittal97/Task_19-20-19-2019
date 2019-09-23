@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-    <%@taglib uri="http://www.springframework.org/tags/form" prefix="fr" %>
+	pageEncoding="ISO-8859-1"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="fr"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -59,45 +59,46 @@ h6 {
 
 </head>
 <body>
-<h3 align="center"
+	<h3 align="center"
 		style="color: #444; font-size: x-large; text-decoration: underline;">
 		ADD STUDENTS</h3>
 	<hr>
 	<div class=container>
 		<fr:form action="showDetails" modelAttribute="save">
-			
+
 			<table align="center">
 				<tr>
 					<th>RollNo.</th>
-					<td> <fr:input path="rno"/></td>
-					 <td><fr:errors cssStyle="color:red" path="rno">Only numbers allowed</fr:errors></td>
+					<td><fr:input path="rno" /></td>
+					<td><fr:errors cssStyle="color:red" path="rno">Only numbers allowed</fr:errors></td>
 				<tr>
 					<th>Name</th>
-					<td> <fr:input path="name"/></td>
-					 <td><fr:errors cssStyle="color:red" path="name"></fr:errors></td>
+					<td><fr:input path="name" /></td>
+					<td><fr:errors cssStyle="color:red" path="name"></fr:errors></td>
 				</tr>
 				<tr>
 					<TH>Dept</TH>
-					<TD> <fr:input path="dept"/></TD>
+					<TD><fr:input path="dept" /></TD>
 				</tr>
 				<TR>
 					<TH>Semester</TH>
-					<TD> <fr:input path="sem"/></TD>
+					<TD><fr:input path="sem" /></TD>
 				</TR>
-				
 
-					<td align="center" colspan="2"><input type="submit"
-						value="Save" /></td>
+
+				<td align="center" colspan="2"><input type="submit"
+					value="Save" /></td>
 				</TR>
-			
+
 
 			</table>
 	</div>
 
 	</fr:form>
 	<hr>
-  <a href="inputpage">Add-More-Students</a><br>
-   <a href="index.jsp">Home</a>
+	<a href="inputpage">Add-More-Students</a>
+	<br>
+	<a href="index.jsp">Home</a>
 
 </body>
 </html>
